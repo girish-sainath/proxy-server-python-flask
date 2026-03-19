@@ -1,0 +1,8 @@
+{
+	"xsappname": "proxy-server-python-flask",
+	"appName": "proxy-server-python-flask",
+	"appUrls": {
+		"getDependencies": "https://proxy-server-python-flask.cfapps.eu12.hana.ondemand.com/onboarding/saas-registry/saas/dependencies",
+		"onSubscription": "https://proxy-server-python-flask.cfapps.eu12.hana.ondemand.com/onboarding/saas-registry/saas/register/tenants/{tenantId}"
+	}
+}

@@ -1,0 +1,15 @@
+---
+applications:
+- name: proxy-server-python-flask
+  host: proxy-server-python-flask
+  memory: 512MB
+  disk_quota: 512MB
+  buildpack: python_buildpack
+  command: python proxy.py
+  services:
+   - proxy-server-python-flask-xsuaa-broker
+   - proxy-server-python-flask-saas-registry-application
+  env:
+   env: cloud
+   allow-update: false
+   allow-delete: false
