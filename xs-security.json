@@ -1,0 +1,25 @@
+{
+	"xsappname": "proxy-server-python-flask",
+	"tenant-mode": "shared",
+	"scopes": [{
+			"name": "$XSAPPNAME.ConsumingServiceUser",
+			"description": "Authority for the consuming service to access the application",
+			"grant-as-authority-to-apps": []
+		}, {
+			"name": "$XSAPPNAME.Callback",
+			"description": "Authority for Entitlement Service",
+			"grant-as-authority-to-apps": [
+				"$XSAPPNAME(application,sap-provisioning,tenant-onboarding)"
+			]
+		}, {
+			"name": "$XSAPPNAME.Administrator",
+			"description": "Authority for Administrator Services"
+		}
+	],
+	"authorities": [
+		"$XSAPPNAME.ConsumingServiceUser",
+		"$XSAPPNAME.Callback",
+		"$XSAPPNAME.Administrator",
+		"$ACCEPT_GRANTED_AUTHORITIES"
+	]
+}

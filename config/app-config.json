@@ -1,0 +1,21 @@
+{
+	"<any_fqan>": {
+		"fullyQualifiedApplicationName": "<any_fqan>",
+		"applicationURL": "<application_host>",
+		"landscapeHost": "<landscape_host>",
+		"clientId": "<pdm_clone_clientid_of_application>",
+		"clientSecret": "<pdm_clone_clientsecret_of_application>",
+		"endPoints": {
+			"<any_service_name>": {
+				"serviceName": "<any_service_name>",
+				"serviceURI": "<relative_service_uri>",
+				"tenants": {
+					"<subdomain_id>": {
+						"tenantId": "<tenant_id_guid>",
+						"subdomainId": "<subdomain_id>"
+					}
+				}
+			}
+		}
+	}
+}
